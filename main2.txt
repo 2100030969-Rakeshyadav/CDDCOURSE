@@ -1,0 +1,313 @@
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~ (master)
+$ mkdir project4
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~ (master)
+$ ls
+'3D Objects'/                  IntelGraphicsProfiles/                                                                         Pictures/                            Videos/              node_modules/
+ AppData/                      Links/                                                                                         Postman/                             codereadystudio/     ntuser.dat.LOG1
+'Application Data'@           'Local Settings'@                                                                              'Postman Agent'/                      crudop/              ntuser.dat.LOG2
+ CE3_AdiYogiMQOR.gcode         Music/                                                                                         PrintHood@                           eclipse/             ntuser.ini
+'Cisco Packet Tracer 8.2.1'/  'My Documents'@                                                                                'PyCharm Community Edition 2022.3'/   eclipse-workspace/   package-lock.json
+ Contacts/                     NTUSER.DAT                                                                                     PycharmProjects/                     ern/                 package.json
+ Cookies@                      NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf                                        Recent@                             'experiment 1.html'   postgresql_15.exe*
+ Desktop/                      NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'/                        gitsession1/         project4/
+ Documents/                    NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms   Searches/                            helloword.txt        tswork/
+ Downloads/                    NetHood@                                                                                       SendTo@                              helloworld.txt       workspace/
+ Favorites/                    OneDrive/                                                                                     'Start Menu'@                         html.html
+ IdeaProjects/                'OneDrive - K L University'/                                                                    Templates@                           myapp/
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~ (master)
+$ cd project4
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git init
+Initialized empty Git repository in C:/Users/K Rakesh Yadav/project4/.git/
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ ls -a
+./  ../  .git/
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ ls .git
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ touch main1.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git add .
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main1.txt
+
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git commit -m "first commit in main"
+[master (root-commit) 7ed5e8b] first commit in main
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main1.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git log
+commit 7ed5e8b3fdd7186f06f1ca916cc0001a17d1cb01 (HEAD -> master)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:34:53 2023 +0530
+
+    first commit in main
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ touch main2.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git add .
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   main2.txt
+
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git commit -m "second commit in main"
+[master 70e104c] second commit in main
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main2.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git log
+commit 70e104cd9f49a525e76794b3d9cd4742c4263758 (HEAD -> master)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:37:13 2023 +0530
+
+    second commit in main
+
+commit 7ed5e8b3fdd7186f06f1ca916cc0001a17d1cb01
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:34:53 2023 +0530
+
+    first commit in main
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git branch branch1
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git log
+commit 70e104cd9f49a525e76794b3d9cd4742c4263758 (HEAD -> master, branch1)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:37:13 2023 +0530
+
+    second commit in main
+
+commit 7ed5e8b3fdd7186f06f1ca916cc0001a17d1cb01
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:34:53 2023 +0530
+
+    first commit in main
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git branch
+  branch1
+* master
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ git branch
+* branch1
+  master
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ touch branchfile1.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ git add .
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ git commit -m "first commit in branch1"
+[branch1 ff61037] first commit in branch1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchfile1.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ touch branchfile2.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ git add .
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ git commit -m "second commit in branch2"
+[branch1 2a686f4] second commit in branch2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchfile2.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ git log
+commit 2a686f46052c22a61dea1f64579acea36bd5f6d7 (HEAD -> branch1)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:50:12 2023 +0530
+
+    second commit in branch2
+
+commit ff61037ed5fc344fe007b077045c27423f8eca05
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:49:06 2023 +0530
+
+    first commit in branch1
+
+commit 70e104cd9f49a525e76794b3d9cd4742c4263758 (master)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:37:13 2023 +0530
+
+    second commit in main
+
+commit 7ed5e8b3fdd7186f06f1ca916cc0001a17d1cb01
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:34:53 2023 +0530
+
+    first commit in main
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch1)
+$ git checkout master
+Switched to branch 'master'
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git merge branch1
+Updating 70e104c..2a686f4
+Fast-forward
+ branchfile1.txt | 0
+ branchfile2.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchfile1.txt
+ create mode 100644 branchfile2.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git log
+commit 2a686f46052c22a61dea1f64579acea36bd5f6d7 (HEAD -> master, branch1)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:50:12 2023 +0530
+
+    second commit in branch2
+
+commit ff61037ed5fc344fe007b077045c27423f8eca05
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:49:06 2023 +0530
+
+    first commit in branch1
+
+commit 70e104cd9f49a525e76794b3d9cd4742c4263758
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:37:13 2023 +0530
+
+    second commit in main
+
+commit 7ed5e8b3fdd7186f06f1ca916cc0001a17d1cb01
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:34:53 2023 +0530
+
+    first commit in main
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git branch branch2
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git branch
+  branch1
+  branch2
+* master
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch2)
+$ git branch
+  branch1
+* branch2
+  master
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch2)
+$ touch branch2file1.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch2)
+$ git add .
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch2)
+$ git commit -m "first commit in branch2"
+[branch2 5ba52db] first commit in branch2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branch2file1.txt
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch2)
+$ git log
+commit 5ba52db1dcda229941ebd9216552459f075c8c9e (HEAD -> branch2)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 12:01:17 2023 +0530
+
+    first commit in branch2
+
+commit 2a686f46052c22a61dea1f64579acea36bd5f6d7 (master, branch1)
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:50:12 2023 +0530
+
+    second commit in branch2
+
+commit ff61037ed5fc344fe007b077045c27423f8eca05
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:49:06 2023 +0530
+
+    first commit in branch1
+
+commit 70e104cd9f49a525e76794b3d9cd4742c4263758
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:37:13 2023 +0530
+
+    second commit in main
+
+commit 7ed5e8b3fdd7186f06f1ca916cc0001a17d1cb01
+Author: Rakesh-Yadav <2100030969@kluniversity.in>
+Date:   Wed Dec 13 11:34:53 2023 +0530
+
+    first commit in main
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (branch2)
+$ git checkout master
+Switched to branch 'master'
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$ git rebase branch2
+Successfully rebased and updated refs/heads/master.
+
+K Rakesh Yadav@DESKTOP-PG9CDRR MINGW64 ~/project4 (master)
+$
